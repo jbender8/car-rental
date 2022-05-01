@@ -1,20 +1,24 @@
 .header{
-    background: url("../img/header.jpg") no-repeat center center fixed;
+    background: url("../../img/header.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 16px;
+    padding: 48px 10%;
 }
 .description{
     background-color: gray;
     color: white;
     font-size: 16px;
+    display: flex;
+    text-align: start;
+    padding:8px;
 }
 .title{
     color: white;
-    font-size: 48px;
+    font-size: 52px;
     display: flex;
     justify-content: left;
     font-weight: 600;
+    margin: 0;
 }

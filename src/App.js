@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import HomeWindow from './components/HomePage';
 import FooterSection from './components/Footer';
-import HeaderSection from './components/Header';
+import HeaderSection from './components/Header/Header';
 import Navbar from './components/Navbar';
 import Cars from './components/Cars';
 import Location from './components/Location';
