@@ -5,7 +5,7 @@ class HeaderSection extends React.Component{
     render(){
         return(
             <div>
-                <Typography variant="h1">Ocean Drive Rental Co.</Typography>
+                <Typography variant="h2">Ocean Drive Rental Co.</Typography>
             </div>
         )
     }
