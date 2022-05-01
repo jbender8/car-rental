@@ -4,6 +4,9 @@ import HomeWindow from './components/HomePage';
 import FooterSection from './components/Footer';
 import HeaderSection from './components/Header';
 import Navbar from './components/Navbar';
+import Cars from './components/Cars';
+import Location from './components/Location';
+import EditRes from './components/EditRes';
 
 function App() {
   return (
@@ -11,6 +14,9 @@ function App() {
       <Navbar />
       <HeaderSection/>
       <HomeWindow/>
+      <Cars />
+      <EditRes />
+      <Location />
       <FooterSection />
     </div>
   );
