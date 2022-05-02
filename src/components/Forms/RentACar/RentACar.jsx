@@ -1,6 +1,11 @@
-import { FormControl, InputBase, MenuItem, TextField, Typography } from "@mui/material";
+import { Button, FormControl, MenuItem, TextField } from "@mui/material";
 import React from "react";
-import "./rent.css"
+import "./rent.css";
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { TimePicker } from '@mui/x-date-pickers/TimePicker';
+
 
 class RentForm extends React.Component {
     render() {
@@ -156,11 +161,39 @@ class RentForm extends React.Component {
             <div className="Rent">
                 <FormControl>
                     <div className="form">
-                        <TextField id="outlined-basic" label="Pick Up Date" variant="outlined" />
-                        <TextField id="outlined-basic" label="Pick Up Time" variant="outlined" />
+                        <TextField id="outlined-basic" label="First Name" variant="outlined" />
+                        <TextField id="outlined-basic" label="Last Name" variant="outlined" />
                     </div>
-                    <div className="form">                        <TextField id="outlined-basic" label="Drop Off Date" variant="outlined" />
-                        <TextField id="outlined-basic" label="Drop Off Time" variant="outlined" />
+                    <div className="form">
+                        <TextField id="outlined-basic" label="Email" variant="outlined" />
+                    </div>
+                    <div className="form">
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                            <DatePicker
+                                label="Pick Up Date"
+                                renderInput={(params) => <TextField {...params} />}
+                            />
+                        </LocalizationProvider>
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                            <TimePicker
+                                label="Pick Up Time"
+                                renderInput={(params) => <TextField {...params} />}
+                            />
+                        </LocalizationProvider>
+                    </div>
+                    <div className="form">
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                            <DatePicker
+                                label="Drop Off Date"
+                                renderInput={(params) => <TextField {...params} />}
+                            />
+                        </LocalizationProvider>
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                            <TimePicker
+                                label="Drop Off Time"
+                                renderInput={(params) => <TextField {...params} />}
+                            />
+                        </LocalizationProvider>
                     </div>
                     <div className="form">
                         <TextField
@@ -186,6 +219,9 @@ class RentForm extends React.Component {
                             ))}
                         </TextField>
                     </div>
+                    <Button className="SelcectCar">
+                        SELECT A CAR
+                    </Button>
                 </FormControl>
 
             </div>
