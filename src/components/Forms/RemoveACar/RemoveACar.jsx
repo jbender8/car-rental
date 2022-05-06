@@ -1,5 +1,6 @@
 import { Button, FormControl, TextField } from "@mui/material";
 import React from "react";
+import './remove.css'
 
 class RemoveForm extends React.Component{
     render(){
