@@ -7,17 +7,23 @@ import Cars from './components/PageConatiner/Cars/Cars';
 import Location from './components/PageConatiner/location/Location';
 import EditRes from './components/PageConatiner/EditRes/EditRes';
 import Manager from './components/PageConatiner/ManagerPortal/Manager';
+import { BrowserRouter as Router, Routes, 
+  Route,} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <HeaderSection/>
-      <HomeWindow/>
-      <Cars />
-      <EditRes />
-      <Location />
-      <Manager />     
+      <Router>
+      <Routes>
+        <Route exact path="/" element={<HomeWindow/>} />
+        <Route path="/Edit"  element={<EditRes/>} />
+        <Route path="/Cars"  element={<Cars/>} />
+        <Route path="/Location" element={<Location/>} />
+        <Route path="/Manager" element={<Manager/>} />
+      </Routes>
+      </Router>
       <FooterSection />
     </div>
   );
