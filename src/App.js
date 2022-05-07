@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import HomeWindow from './components/PageConatiner/Home/HomePage';
 import FooterSection from './components/Footer/Footer';
@@ -8,31 +7,23 @@ import Cars from './components/PageConatiner/Cars/Cars';
 import Location from './components/PageConatiner/location/Location';
 import EditRes from './components/PageConatiner/EditRes/EditRes';
 import Manager from './components/PageConatiner/ManagerPortal/Manager';
-import CarsCard from './components/Cards/CarsOffered/CarsCard';
-import SelectACarCard from './components/Cards/SelectACar/SelectACarCard';
-import AddCar from './components/Forms/AddCar/AddCar';
-import Login from './components/Forms/Login/Login';
-import RentACar from './components/Forms/RentACar/RentACar';
-import RemoveACar from './components/Forms/RemoveACar/RemoveACar';
-import EditReservation from './components/Forms/EditReservation/EditReservation';
+import { BrowserRouter as Router, Routes, 
+  Route,} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <HeaderSection/>
-      <HomeWindow/>
-      <Cars />
-      <EditRes />
-      <Location />
-      <Manager />
-      <CarsCard />
-      <SelectACarCard/>
-      <AddCar/>
-      <Login />
-      <RentACar />
-      <RemoveACar />
-      <EditReservation/>
+      <Router>
+      <Routes>
+        <Route exact path="/" element={<HomeWindow/>} />
+        <Route path="/Edit"  element={<EditRes/>} />
+        <Route path="/Cars"  element={<Cars/>} />
+        <Route path="/Location" element={<Location/>} />
+        <Route path="/Manager" element={<Manager/>} />
+      </Routes>
+      </Router>
       <FooterSection />
     </div>
   );

@@ -1,5 +1,6 @@
 import { Button, FormControl, TextField } from "@mui/material";
 import React from "react";
+import './editres.css';
 
 class EditForm extends React.Component{
     render(){
@@ -12,7 +13,7 @@ class EditForm extends React.Component{
 
                     </div>
                     <div className="form">
-                        <TextField id="outlined-basic" label="Password" variant="outlined" />
+                        <TextField id="outlined-basic" label="Reservation Number" variant="outlined" />
                     </div>
                     <Button className="SelcectCar">
                         Cancel Reservation
