@@ -14,16 +14,19 @@ import home from "./img/icons/car-svgrepo-com.svg"
 import notify from "./img/icons/notification-svgrepo-com.svg"
 
 function App() {
+  
   return (
     <div className="App">
-      <div>
+      
         <Router>
-          <Link to="/"><img src={home}/></Link>
+          <div className='nav'>
+          <Link to="/"><img className='homeimg' src={home}/></Link>
           <Link to="/Edit">Edit a Current Reservation</Link>
           <Link to="/Cars">Car we Offer</Link>
           <Link to="/Location">Location</Link>
-          <img src={notify} />
-          <Link to="/Manager"><img src={person} /></Link>
+            <img className='notifyimg' src={notify} />
+            <Link to="/Manager"><img className='profileimg' src={person} /></Link>
+          </div>
           <Routes>
             <Route exact path="/" element={<HomeWindow />} />
             <Route path="/Edit" element={<EditRes />} />
@@ -32,7 +35,6 @@ function App() {
             <Route path="/Manager" element={<Manager />} />
           </Routes>
         </Router> 
-      </div>
       <FooterSection />
     </div>
   );
