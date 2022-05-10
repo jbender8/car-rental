@@ -8,7 +8,7 @@ class LocationSpot extends React.Component{
     render(){
         return(
             <div className="location">
-                <HeaderSection />
+                <HeaderSection type='location' />
                 <Typography variant="h5">Location</Typography>
             </div>
         )

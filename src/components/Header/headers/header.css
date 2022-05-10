@@ -1,11 +1,31 @@
-.header{
-    background: url("../../img/header.jpg") no-repeat center center fixed;
+.homeHeader{
+    background: url("../../../img/header.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 48px 10%;
 }
+
+.carHeader {
+    background-color: #ff781f;
+    padding: 48px 10%;
+}
+
+.locationHeader {
+    background-color: #4b0076;
+    padding: 48px 10%;
+}
+
+.managerHeader {
+    background-color: #b1bca0;
+    padding: 48px 10%;
+}
+.editHeader {
+    background-color: #ffc0cb;
+    padding: 48px 10%;
+}
+
 .description{
     background-color: gray;
     color: white;

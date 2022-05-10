@@ -11,7 +11,7 @@ class ManagerPortal extends React.Component{
     render(){
         return(
             <div className="manager">
-                <HeaderSection />
+                <HeaderSection type='manager' />
                 <Typography variant="h5">Manager Portal</Typography>
                 <Login />
                 <AddCar />

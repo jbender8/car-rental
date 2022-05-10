@@ -1,19 +1,42 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import "./header.css"
+import CarHeader from "./headers/carHeader";
+import HomeHeader from "./headers/homeHeader";
+import LocationHeader from "./headers/locationHeader";
+import ManagerHeader from "./headers/managerHeader";
+import EditHeader from "./headers/editHeader";
+
+
+
+
 
 class HeaderSection extends React.Component {
-    render() {
-        return (
-            <div class="header">
-                <Typography class="title">Ocean Drive Rental Co.</Typography>
-                <Typography class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus id mauris eget aliquet. Duis pretium nisi nec metus imperdiet laoreet. Proin eget nibh sagittis, consequat lacus quis, lobortis felis. Quisque vel dui a est tincidunt gravida nec eleifend urna. Cras sem arcu, mollis id enim vel, sodales faucibus turpis. Morbi non ipsum porttitor, varius metus id, vestibulum urna. Nullam non urna luctus, aliquet turpis quis, congue eros. Sed pretium turpis vitae arcu fringilla, quis rhoncus purus pulvinar. In vulputate nisi orci, vitae eleifend diam tempus in. Etiam nisi nulla, varius a nisl nec, accumsan vestibulum nisl.</Typography>
-            </div>
-        )
+    constructor(props) {
+        super(props);
+        this.state = {
+            type: props.type,
+        };
     }
-}
+        render() {
+            if (this.state.type === 'cars') {
+                return <CarHeader />;
+            }
+            else if (this.state.type === 'location'){
+                return <LocationHeader />;
+            }
+            else if (this.state.type === 'manager') {
+                return <ManagerHeader />;
+            }
+            else if (this.state.type === 'edit') {
+                return <EditHeader />;
+            }
+            return <HomeHeader />;
+            
+        }
+    }
 
 
-export default function Header() {
-    return (<HeaderSection />);
+
+export default function Header(props) {
+    return (<HeaderSection type={props.type} />);
 }

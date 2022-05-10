@@ -10,7 +10,7 @@ class HomeWindow extends React.Component{
     render(){
         return(
             <div className="home">
-                <HeaderSection />
+                <HeaderSection type='home'/>
                 <Typography variant="h2"> Rent A Car</Typography>
                 <RentACar />
                 <SelectACarCard />
