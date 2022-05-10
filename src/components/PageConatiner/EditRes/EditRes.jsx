@@ -9,7 +9,7 @@ class Reservation extends React.Component{
     render(){
         return(
             <div className="editres">
-                <HeaderSection />
+                <HeaderSection type='edit' />
                 <Typography variant="h5">Edit a current reservation</Typography>
                 <EditReservation />
             </div>
