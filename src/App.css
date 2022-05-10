@@ -10,9 +10,6 @@
 .App a:visited{
   color:white;
 }
-img{
-  height: 20px;
-}
 .nav{
   padding: 15px;
 }
@@ -28,11 +25,17 @@ div.nav {
 
 .nav .homeimg {
   left: 16px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  top: 3px;
 }
 
 .nav .notifyimg{
     right: 48px;
+    height: 20px;
 }
 .nav .profileimg {
   right: 16px;
+  height: 20px;
 }

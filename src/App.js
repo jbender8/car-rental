@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes,
   Link,
   BrowserRouter,} from "react-router-dom";
 import person from "./img/icons/person-svgrepo-com.svg"
-import home from "./img/icons/car-svgrepo-com.svg"
+import home from "./img/logo.png"
 import notify from "./img/icons/notification-svgrepo-com.svg"
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       
         <Router>
           <div className='nav'>
-          <Link to="/"><img className='homeimg' src={home}/></Link>
+          <Link to="/"><img className='homeimg' src={home} /></Link>
           <Link to="/Edit">Edit a Current Reservation</Link>
           <Link to="/Cars">Car we Offer</Link>
           <Link to="/Location">Location</Link>

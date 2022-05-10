@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import "./footer.css"
+import logo from '../../img/logo.png'
 
 class FooterSection extends React.Component {
     render() {
@@ -9,6 +10,7 @@ class FooterSection extends React.Component {
             <div class="footer">
                 <Grid container spacing={2}>
                     <Grid item xs={3}>
+                        <img className="FooterLogo" src={logo} />
                     </Grid>
                     <Grid item xs={3}>
                         <Typography variant="h5">Company Information</Typography>
@@ -28,10 +30,10 @@ class FooterSection extends React.Component {
                     </Grid>
                     <Grid item xs={3}>
                         <Typography variant="h5">Quick Links</Typography>
-                        <a href="">Cars we Offer</a>
-                        <a href="">Location</a>
-                        <a href="">Rent a Car</a>
-                        <a href="">Edit a Current Reservation</a>
+                        <a href="/Cars">Cars we Offer</a>
+                        <a href="/Location">Location</a>
+                        <a href="/">Rent a Car</a>
+                        <a href="/Edit">Edit a Current Reservation</a>
                     </Grid>
                 </Grid>
             </div>

@@ -21,3 +21,10 @@
 .copy{
     font-size: 12px;
 }
+
+.FooterLogo{
+    border-radius: 50%;
+    scale: 1.5;
+    width: 150px;
+    height: 150px;
+}
