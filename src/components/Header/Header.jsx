@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import React from "react";
 import CarHeader from "./headers/carHeader";
 import HomeHeader from "./headers/homeHeader";
