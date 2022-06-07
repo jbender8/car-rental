@@ -161,11 +161,11 @@ class RentForm extends React.Component {
             <div className="Rent">
                 <FormControl>
                     <div className="form">
-                        <TextField id="outlined-basic" label="First Name" variant="outlined" />
-                        <TextField id="outlined-basic" label="Last Name" variant="outlined" />
+                        <TextField id="outlined-basic" label="First Name" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Last Name" variant="outlined" fullWidth />
                     </div>
                     <div className="form">
-                        <TextField id="outlined-basic" label="Email" variant="outlined" />
+                        <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth />
                     </div>
                     <div className="form">
                         <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -200,6 +200,7 @@ class RentForm extends React.Component {
                             id="outlined-select-currency"
                             select
                             label="Car Make"
+                            fullWidth
                         >
                             {make.map((option) => (
                                 <MenuItem key={option.value} value={option.value}>
@@ -210,7 +211,8 @@ class RentForm extends React.Component {
                         <TextField
                             id="outlined-select-currency"
                             select
-                            label="Car Make"
+                            label="Car Color"
+                            fullWidth
                         >
                             {color.map((option) => (
                                 <MenuItem key={option.value} value={option.value}>

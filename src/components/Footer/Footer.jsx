@@ -18,7 +18,7 @@ class FooterSection extends React.Component {
                         <a href="">Investor Relations</a>
                         <a href="">Job Opportunities</a>
                         <a href="">Customers with Disabilities</a>
-                        <a href="">Manager Portal</a>
+                            <a href="/Manager">Manager Portal</a>
                     </Grid>
                     <Grid item xs={3}>
                         <Typography variant="h5">Customer Support</Typography>
