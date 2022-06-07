@@ -10,7 +10,6 @@ class CarRental extends React.Component{
         return(
             <div className="cars">
                 <HeaderSection type='cars' />
-                <Typography variant="h5">Cars We Offer</Typography>
                 <CarsCard />
             </div>
         )

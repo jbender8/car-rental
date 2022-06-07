@@ -13,7 +13,7 @@ class HomeWindow extends React.Component{
                 <HeaderSection type='home'/>
                 <Typography variant="h2"> Rent A Car</Typography>
                 <RentACar />
-                <SelectACarCard />
+                {/* <SelectACarCard /> */}
             </div>
         )
     }
